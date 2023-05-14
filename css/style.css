@@ -394,6 +394,12 @@ body {
 .social-list {
   display: flex;
   justify-content: center;
+  gap: 24px;
+}
+
+.second-container-footer .social-list {
+  display: flex;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -405,6 +411,11 @@ body {
   height: 40px;
   border-radius: 50%;
   background-color: var(--primary-brand-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--pressed-state-color);
 }
 
 .social-list-icon {
@@ -521,6 +532,9 @@ body {
 
 .prtf-list-item {
   width: calc((100% - 48px) / 3);
+}
+
+.prtf-link {
   display: block;
 }
 
