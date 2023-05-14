@@ -226,6 +226,10 @@ body {
 
 /* features section  */
 
+.features-container {
+  margin-bottom: 8px;
+}
+
 .features-list {
   display: flex;
   gap: 24px;
@@ -350,7 +354,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
@@ -449,7 +453,7 @@ body {
 .customer-list-link:hover,
 .customer-list-link:focus {
   border: 1px solid var(--pressed-state-color);
-  color: var(--pressed-state-color);
+  background-color: var(--pressed-state-color);
 }
 
 .logo-svg {
@@ -462,10 +466,13 @@ body {
   fill: var(--pressed-state-color);
 }
 
-.page-footer-section {
+.footer-container {
   display: flex;
   align-items: baseline;
   gap: 120px;
+}
+
+.page-footer-section {
 }
 
 .second-container-footer {
