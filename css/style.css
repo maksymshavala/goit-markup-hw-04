@@ -394,7 +394,7 @@ body {
 .social-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .social-list-link {
@@ -450,12 +450,10 @@ body {
   color: var(--sub-text-color);
 }
 
-.social-list-link:hover,
-.social-list-link:focus,
 .customer-list-link:hover,
 .customer-list-link:focus {
   border: 1px solid var(--pressed-state-color);
-  background-color: var(--pressed-state-color);
+  color: var(--pressed-state-color);
 }
 
 .logo-svg {
@@ -481,7 +479,8 @@ body {
 .second-container-footer {
 }
 
-.second-container-footer .social-list .social-list-link:hover {
+.second-container-footer .social-list .social-list-link:hover,
+.second-container-footer .social-list .social-list-link:focus {
   background-color: var(--Green-hover);
 }
 
