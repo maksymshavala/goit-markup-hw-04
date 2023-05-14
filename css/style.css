@@ -78,6 +78,8 @@ body {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-nav {
@@ -173,14 +175,16 @@ body {
 
 .hero-section {
   background-image: linear-gradient(
-      rgba(46, 47, 66, 0.8),
-      rgba(46, 47, 66, 0.8)
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: var(--head-color);
   padding: 188px 0;
+  max-width: 1440px;
 }
 
 .main-head {
@@ -231,7 +235,7 @@ body {
   width: calc((100% - 72px) / 4);
 }
 
-.features-list-link {
+.features-list-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,6 +330,7 @@ body {
 }
 
 .page-occup-list {
+  padding: 32px 0;
 }
 
 .occup-list {
@@ -335,6 +340,8 @@ body {
 
 .occup-list-item {
   flex-basis: calc((100% - 48px) / 3);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* Our team section  */
@@ -370,10 +377,12 @@ body {
   background-color: var(--white-color);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list-text {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .social-list {
@@ -432,17 +441,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--sub-text-color);
 }
 
+.social-list-link:hover,
+.social-list-link:focus,
 .customer-list-link:hover,
 .customer-list-link:focus {
   border: 1px solid var(--pressed-state-color);
+  color: var(--pressed-state-color);
 }
 
 .logo-svg {
-  width: 104px;
-  height: 56px;
-  fill: var(--sub-text-color);
+  fill: currentColor;
   margin: 16px 32px;
 }
 
@@ -451,8 +462,13 @@ body {
   fill: var(--pressed-state-color);
 }
 
+.page-footer-section {
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
+}
+
 .second-container-footer {
-  display: inline;
 }
 
 .second-container-footer .social-list .social-list-link:hover {
@@ -460,12 +476,12 @@ body {
 }
 
 .second-text-footer {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 0.67;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-color);
+  margin-bottom: 16px;
 }
 
 /* Portfolio section  */
