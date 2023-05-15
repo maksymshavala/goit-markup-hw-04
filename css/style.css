@@ -92,9 +92,6 @@ body {
   gap: 40px;
 }
 
-.menu-item {
-}
-
 .page-contacts {
   display: flex;
   gap: 40px;
@@ -179,6 +176,8 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero/bg.jpg);
+  margin-right: auto;
+  margin-left: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -226,10 +225,6 @@ body {
 
 /* features section  */
 
-.features-list-container {
-  margin-bottom: 8px;
-}
-
 .features-list {
   display: flex;
   gap: 24px;
@@ -274,8 +269,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white-color);
   background-color: var(--pressed-state-color);
-  border: 1px;
-  border: 1px solid transparent;
+  border-color: solid transparent;
 }
 
 .list-head {
@@ -283,7 +277,6 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 8px;
   margin-bottom: 8px;
 
   color: var(--head-color);
@@ -335,19 +328,9 @@ body {
   padding-bottom: 120px;
 }
 
-.page-occup-list {
-  padding: 32px 0;
-}
-
 .occup-list {
   display: flex;
   gap: 24px;
-}
-
-.occup-list-item {
-  flex-basis: calc((100% - 48px) / 3);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* Our team section  */
@@ -469,7 +452,6 @@ body {
 
 .logo-svg {
   fill: currentColor;
-  margin: 16px 32px;
 }
 
 .logo-svg:hover,
