@@ -242,6 +242,7 @@ body {
   border-radius: 4px;
   width: 264px;
   height: 112px;
+  margin-bottom: 8px;
 }
 
 .features-icon {
@@ -269,7 +270,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white-color);
   background-color: var(--pressed-state-color);
-  border-color: solid transparent;
+  border-color: transparent;
 }
 
 .list-head {
